@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Island Ark Project</string>
+
+    <string name="iv_background">Island Ark Project Background</string>
+    <string name="iv_logo">Island Ark Project Logo</string>
+
+    <!-- Home Activity -->
+    <string name="app_question">How can intangible cultural heritage be preserved online?</string>
+    <string name="app_intro">As climate change and other forces increase migration for islanders around the world, important cultural practices are at risk of disappearing forever. To solve this problem, the Island Ark Project is a kind of living time capsule where anyone can upload, discuss, and access culture regardless of where they live.\n Try and upload your own cultural practices!</string>
+    <string name="btn_begin">Click here to begin!</string>
+    <string name="welcome">Welcome</string>
+
+    <!-- Login or Register Activity -->
+    <string name="member">Members</string>
+    <string name="btn_login">Login</string>
+    <string name="not_member">Not yet a member?</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_home">Home</string>
+
+    <!-- Login Activity -->
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="btn_register_here">Register here</string>
+
+    <!-- Register Activity -->
+    <string name="password_confirm">Confirm Password</string>
+    <string name="email">E-mail</string>
+    <string name="user_name">Your name</string>
+    <string name="btn_login_back">Back to login</string>
+
+    <!-- Logged in Home Activity -->
+    <string name="btn_user_settings">Change user settings</string>
+    <string name="btn_logout">Log out</string>
+    <string name="btn_upload_content">Upload New Content</string>
+    <string name="btn_view_uploaded_content">View uploaded Content</string>
+    <string name="closing">Exit App</string>
+    <string name="closing_msg">Are you sure you want to exit?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+    <!-- Change User Settings Activity -->
+    <string name="update_info">Update User Information</string>
+    <string name="non_mod">This field is non-modifiable</string>
+    <string name="btn_change_password">Change Password</string>
+    <string name="btn_undo">Undo changes</string>
+    <string name="btn_update">Update</string>
+
+    <!-- Upload New Content Activity -->
+    <string name="upload_content">Upload New Content</string>
+    <string name="btn_change_settings">Change user settings</string>
+
+    <!-- View Uploaded Content -->
+    <string name="sorting_view">Sorting View Options</string>
+    <string name="btn_photos">My Photos</string>
+    <string name="btn_location">Location</string>
+    <string name="btn_date">Date of event</string>
+    <string name="btn_uploaded_date">Uploaded Date</string>
+    <string name="btn_az">A-Z By Event Name</string>
+
+    <!-- Confirm Password -->
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_password">Enter your password:</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+
+    <!-- Change Password -->
+    <string name="change_password">Change Password</string>
+    <string name="cur_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="conf_new_password">Confirm New Password</string>
+
+    <!-- Upload Queue -->
+    <string name="upload_queue">Upload Queue</string>
+    <string name="queue_length">Queue length: </string>
+    <string name="name">Name</string>
+    <string name="sample">Sample</string>
+    <string name="details">Details</string>
+    <string name="event_name">Name of Event</string>
+    <string name="description">Description</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+    <string name="up_private">Private (only available to you)</string>
+    <string name="up_public">Public (available to anyone)</string>
+    <string name="permission">I confirm that I possess the rights to the file uploaded, or have the permission to the rights owner to upload the file.</string>
+    <string name="btn_upload">Upload</string>
+
+</resources>

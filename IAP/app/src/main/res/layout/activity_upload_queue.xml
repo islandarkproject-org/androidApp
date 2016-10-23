@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.islandarkproject.UploadQueue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:drawableLeft="@drawable/ic_account_box"
+        android:text="@string/user_name"
+        android:drawablePadding="10dip"
+        android:paddingLeft="10dip"
+        android:background="@color/Blue"
+        android:textColor="@color/White"
+        android:gravity="center_vertical"
+        android:id="@+id/textView22"
+        android:layout_marginLeft="2.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="@string/btn_logout"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:background="@drawable/button_red_rounded"
+        android:id="@+id/btnLogout_uploadQueue"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/btnLogout_uploadQueue"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout8">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:drawableLeft="@drawable/ic_settings_white_18dp"
+            android:text="@string/btn_user_settings"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:background="@drawable/button_blue_rounded"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:id="@+id/btnChangeUserSettings_uploadQueue"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_below="@+id/btnLogout_viewUploadedContent"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="30dp"
+            android:drawableLeft="@drawable/ic_view_headline"
+            android:text="@string/btn_view_uploaded_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:background="@drawable/button_blue_rounded"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:id="@+id/btnViewUploadedContent_uploadQueue"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignBottom="@+id/btnUpload_viewUploadedContent"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:drawableLeft="@drawable/ic_home"
+        android:text="@string/btn_home"
+        android:textAllCaps="false"
+        android:drawablePadding="2dip"
+        android:paddingLeft="110dip"
+        android:paddingRight="100dip"
+        android:textColor="@color/White"
+        android:background="@drawable/button_blue_rounded"
+        android:id="@+id/btnHome_uploadQueue"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="2.5dp"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnHome_uploadQueue"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:text="@string/upload_queue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnHome_uploadQueue"
+            android:id="@+id/textView23"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/event_name"
+            android:background="@drawable/edittext_rounded"
+            android:ems="10"
+            android:id="@+id/editText8"
+            android:layout_below="@+id/textView24"
+            android:layout_alignStart="@+id/editText9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/description"
+            android:background="@drawable/edittext_rounded"
+            android:ems="10"
+            android:id="@+id/editText9"
+            android:layout_below="@+id/editText8"
+            android:layout_alignStart="@+id/editText10" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="@string/date"
+            android:background="@drawable/edittext_rounded"
+            android:ems="10"
+            android:id="@+id/editText10"
+            android:layout_below="@+id/editText9"
+            android:layout_alignStart="@+id/editText12" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/location"
+            android:background="@drawable/edittext_rounded"
+            android:ems="10"
+            android:id="@+id/editText12"
+            android:layout_below="@+id/editText10"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="@string/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView24"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/textView23"
+            android:layout_centerHorizontal="true" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/textView22"
+            android:layout_marginBottom="102dp"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText12"
+            android:layout_alignStart="@+id/editText12">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/up_private"
+                android:id="@+id/radioButton4"
+                android:layout_alignTop="@+id/radioGroup2"
+                android:layout_alignStart="@+id/radioButton5"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/up_public"
+                android:id="@+id/radioButton5"
+                android:layout_alignTop="@+id/radioGroup2"
+                android:layout_toStartOf="@+id/textView24"
+                android:layout_marginTop="29dp"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</RelativeLayout>

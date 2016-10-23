@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.islandarkproject.ChangeUserSettings"
+    android:background="@color/Black">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:drawableLeft="@drawable/ic_account_box"
+            android:text="@string/user_name"
+            android:drawablePadding="10dip"
+            android:paddingLeft="10dip"
+            android:background="@color/Blue"
+            android:textColor="@color/White"
+            android:gravity="center_vertical"
+            android:id="@+id/textView6"
+            android:layout_marginLeft="2.5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/btnLogout_viewUploadedContent" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="@string/btn_logout"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:background="@drawable/button_red_rounded"
+            android:id="@+id/btnLogout_changeUserSettings"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/linear2ButtonLayout"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/btnLogout_viewUploadedContent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:drawableLeft="@drawable/ic_file_upload"
+                android:text="@string/btn_upload_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:background="@drawable/button_blue_rounded"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:id="@+id/btnUploadNewContent_changeUserSettings"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_below="@+id/btnLogout_viewUploadedContent"
+                android:layout_alignParentStart="true"
+                android:onClick="goToUploadNewContent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:drawableLeft="@drawable/ic_view_headline"
+                android:text="@string/btn_view_uploaded_content"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:background="@drawable/button_blue_rounded"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:id="@+id/btnViewUploadedContent_changeUserSettings"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignBottom="@+id/btnUpload_viewUploadedContent"
+                android:layout_alignParentEnd="true"
+                android:onClick="goToViewUploadedContent" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:drawableLeft="@drawable/ic_home"
+            android:text="@string/btn_home"
+            android:textAllCaps="false"
+            android:drawablePadding="2dip"
+            android:paddingLeft="110dip"
+            android:paddingRight="100dip"
+            android:textColor="@color/White"
+            android:background="@drawable/button_blue_rounded"
+            android:id="@+id/button6"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_below="@+id/linear2ButtonLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="goToLoggedInHome (ChangeUserSettings)" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/relativeLayout3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView12"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/textView11"
+            android:background="@color/White" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/non_mod"
+            android:textColor="@color/Red"
+            android:id="@+id/textView8"
+            android:layout_below="@+id/textView15"
+            android:layout_alignStart="@+id/editText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/username"
+            android:id="@+id/textView9"
+            android:layout_below="@+id/textView8"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/email"
+            android:id="@+id/textView10"
+            android:layout_below="@+id/textView9"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_alignEnd="@+id/textView11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/user_name"
+            android:id="@+id/textView11"
+            android:layout_below="@+id/textView10"
+            android:layout_alignStart="@+id/textView9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_rounded"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_marginBottom="3dip"
+            android:layout_below="@+id/textView8"
+            android:layout_above="@+id/textView10"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_rounded"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_marginBottom="3dip"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editText"
+            android:layout_above="@+id/textView11" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_rounded"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:layout_marginBottom="3dip"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_alignBottom="@+id/textView11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/update_info"
+            android:id="@+id/textView15"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:background="@color/LightSlateGray"
+            android:textColor="@color/White"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relativeLayout3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="@string/btn_change_password"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:background="@drawable/button_blue_rounded"
+            android:id="@+id/btnChangePassword_changeUserSettings"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:onClick="goToChangePassword" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/linearButtonLayout"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/btnChangePassword_changeUserSettings">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:text="@string/btn_undo"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:background="@drawable/button_blue_rounded"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:id="@+id/btnUndoChanges_changeUserSettings"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2.5dp"
+                android:layout_below="@+id/btnChangePassword_changeUserSettings"
+                android:layout_alignParentStart="true" />
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:text="@string/btn_update"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:background="@drawable/button_green_rounded"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.5"
+                android:id="@+id/btnUpdate_changeUserSettings"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignTop="@+id/btnUndoChanges_changeUserSettings"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/islandarkprojectlogo"
+            android:id="@+id/imageView13"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/linearButtonLayout"
+            android:background="@color/White" />
+    </RelativeLayout>
+
+</RelativeLayout>
